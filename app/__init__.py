@@ -8,5 +8,5 @@ def create_app():
     db.init_app(app)
 
     with app.app_context():
-        app.register_blueprint(main)  # Register the blueprint
+        app.register_blueprint(main)
         return app
