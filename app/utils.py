@@ -113,7 +113,7 @@ def process_store(store_id,store_data_df,all_store_business_hours,all_store_time
 def generate_report(report_id):
     report = ReportStatus.query.filter_by(report_id=report_id).first()
     try:
-        store_ids = [store[0] for store in db.session.query(StoreStatus.store_id).distinct().limit(1).all()]
+        store_ids = [store[0] for store in db.session.query(StoreStatus.store_id).distinct().all()]
 
         store_data = db.session.query(
             StoreStatus.store_id,
