@@ -43,9 +43,9 @@ pip install -r requirements.txt
 
 ### Step 4: Configure the Database
 
-- **Ensure PostgreSQL is installed and running.
-- **Create a database named store_status_db.
-- **Update the database URI in config.py if necessary.
+- Ensure PostgreSQL is installed and running.
+- Create a database named store_status_db.
+- Update the database URI in config.py if necessary.
 
 ### Step 5: Initialize the Database
 
